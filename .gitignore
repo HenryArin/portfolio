@@ -147,3 +147,5 @@ src/.DS_Store
 
 *.png 
 *.jpg
+
+public/images
