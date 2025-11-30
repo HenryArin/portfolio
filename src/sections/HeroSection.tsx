@@ -1,26 +1,36 @@
+import profileImg from '../assets/profile.jpg';
+
 const HeroSection = () => {
     return (
-      <section>
-  
-        <div>
-          <img src="/placeholder-profile.png" alt="Profile" />
+      <section className="hero">
+        <div className="hero-background">
+          {/* stars / moon / shooting stars will be here later */}
         </div>
   
-        <h1>Henry Arinaga</h1>
-        <div className="name-divider"></div>
-        <p>Shoot for the stars, one commit at a time</p>
+        <div className="hero-content">
+          <div className="hero-profile">
+          <img src={profileImg} alt="Profile" />
+          </div>
   
-        <div>
-          <span>[GitHub]</span>
-          <span>[LinkedIn]</span>
-          <span>[Email]</span>
-          <span>[Discord]</span>
+          <h1 className="hero-name">Henry Arinaga</h1>
+  
+          <div className="hero-name-divider"></div>
+  
+          <p className="hero-tagline">
+            Shoot for the stars, one commit at a time
+          </p>
+  
+          <div className="hero-socials">
+            <span>[GitHub]</span>
+            <span>[LinkedIn]</span>
+            <span>[Email]</span>
+            <span>[Discord]</span>
+          </div>
+  
+          <div className="hero-scroll-indicator">
+            <span>↓ Scroll</span>
+          </div>
         </div>
-  
-        <div>
-          <span>↓ Scroll</span>
-        </div>
-  
       </section>
     );
   };

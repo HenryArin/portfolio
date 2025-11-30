@@ -3,7 +3,7 @@ import HeroSection from './sections/HeroSection';
 
 function App() {
   return (
-    <div>
+    <div className="App">
       <HeroSection />
     </div>
   );
