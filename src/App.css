@@ -6,7 +6,7 @@
     sans-serif;
 }
 
-/* HERO SECTION */
+/* Hero Section */
 
 .hero {
   position: relative;
@@ -67,4 +67,45 @@
   margin-top: 1.5rem;
   font-size: 0.9rem;
   opacity: 0.7;
+}
+
+
+/* About Section */
+.about {
+  min-height: 60vh;
+  padding: 4rem 2rem;
+  background: #050816;
+  display: flex;
+  justify-content: center;
+}
+
+.about-content {
+  max-width: 720px;
+}
+
+.about-title {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.about-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.about-tech-title {
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+}
+
+.about-tech-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.5rem;
+  font-size: 0.95rem;
+  opacity: 0.95;
 }
