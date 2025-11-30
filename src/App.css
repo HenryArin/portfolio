@@ -280,34 +280,42 @@
   position: relative;
   color: #ffffff;
   overflow: hidden;
+
+  /* animation starting state */
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 800ms ease-out, transform 800ms ease-out;
 }
 
+/* dark overlay */
 .footer::before {
   content: '';
   position: absolute;
   inset: 0;
   background: linear-gradient(
-    to top,
-    rgba(2, 5, 19, 0.95),
-    rgba(2, 5, 19, 0.75),
-    rgba(2, 5, 19, 0.2)
+    to bottom,
+    #050816 0%,
+    #050816 25%,
+    rgba(5, 8, 22, 0.9) 35%,
+    rgba(5, 8, 22, 0.6) 55%,
+    rgba(5, 8, 22, 0.35) 75%,
+    rgba(5, 8, 22, 0.0) 100%
   );
   z-index: 0;
 }
+
 
 .footer-inner {
   position: relative;
   z-index: 1;
 }
 
-
-.footer-inner {
-  max-width: 960px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 2.5rem;
+/* when visible, fade in + slide up */
+.footer-visible {
+  opacity: 1;
+  transform: translateY(0);
 }
+
 
 .footer-content {
   max-width: 520px;
