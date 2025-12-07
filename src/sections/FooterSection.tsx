@@ -50,22 +50,21 @@ const FooterSection = () => {
             <div className="footer-contact-group">
               <span className="footer-label">Email</span>
               <a
-                href="mailto:your.email@example.com"
-                className="footer-link"
+              href="mailto:henryarinaga@gmail.com"
+              className="footer-link"
               >
-                your.email@example.com
-              </a>
+              Henryarinaga@gmail.com
+            </a>
             </div>
-
             <div className="footer-contact-group">
               <span className="footer-label">GitHub</span>
               <a
-                href="https://github.com/your-username"
+                href="https://github.com/henryarin"
                 target="_blank"
                 rel="noreferrer"
                 className="footer-link"
               >
-                github.com/your-username
+                github.com/henryarin
               </a>
             </div>
 
