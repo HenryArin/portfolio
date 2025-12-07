@@ -72,12 +72,12 @@ const FooterSection = () => {
             <div className="footer-contact-group">
               <span className="footer-label">LinkedIn</span>
               <a
-                href="https://www.linkedin.com/in/your-linkedin"
+                href="https://www.linkedin.com/in/henryarinaga/"
                 target="_blank"
                 rel="noreferrer"
                 className="footer-link"
               >
-                linkedin.com/in/your-linkedin
+                linkedin.com/in/henryarinaga
               </a>
             </div>
 
@@ -90,7 +90,7 @@ const FooterSection = () => {
 
         <div className="footer-bottom">
           <span className="footer-bottom-text">
-            © {new Date().getFullYear()} Henry Arinaga. Shooting for the stars ✨
+            © {new Date().getFullYear()} Henry Arinaga. Shooting for the stars 
           </span>
         </div>
       </div>
