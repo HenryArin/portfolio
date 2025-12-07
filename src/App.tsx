@@ -1,9 +1,10 @@
-import './App.css';
 import HeroSection from './sections/HeroSection';
 import AboutSection from './sections/AboutSection';
 import ProjectsSection from './sections/ProjectsSection';
 import BlogSection from './sections/BlogSection';
 import FooterSection from './sections/FooterSection';
+import './styles/layout.css';
+import "./styles/animations.css";
 
 function App() {
   return (
