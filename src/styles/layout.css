@@ -386,7 +386,7 @@
       var(--bg-page) 0%,
       rgba(5, 8, 22, 0) 50%
     ),
-    url('/images/footer-bg.png');
+    url('/portfolio/images/footer-bg.png');
   background-size: cover;
   background-position: center bottom;
   background-repeat: no-repeat;
@@ -398,6 +398,7 @@
   transform: translateY(40px);
   transition: opacity 800ms ease-out, transform 800ms ease-out;
 }
+
 
 .footer * {
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.75);
