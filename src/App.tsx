@@ -3,12 +3,14 @@ import AboutSection from './sections/AboutSection';
 import ProjectsSection from './sections/ProjectsSection';
 import BlogSection from './sections/BlogSection';
 import FooterSection from './sections/FooterSection';
+import Navbar from "./components/Navbar";
 import './styles/layout.css';
 import "./styles/animations.css";
 
 function App() {
   return (
     <div className="App">
+      <Navbar />
       <HeroSection />
       <AboutSection />
       <ProjectsSection />
