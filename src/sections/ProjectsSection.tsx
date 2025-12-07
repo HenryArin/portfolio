@@ -4,6 +4,7 @@ type Project = {
   title: string;
   description: string;
   tech: string[];
+  highlights?: string[]; // added optional highlights
   link?: string;
   imageAlt: string;
 };
@@ -14,9 +15,16 @@ const projects: Project[] = [
     description:
       "An educational RSA factorization tool written in C that lets users explore prime numbers, factorization methods, and timing comparisons.",
     tech: ["C", "Make", "GTK (planned)", "CLI"],
+    highlights: [
+      "O(√n) optimized prime-checking",
+      "Multiple factorization methods (trial division, sqrt)",
+      "Benchmarked execution paths",
+      "Modular architecture for algorithm swapping",
+    ],
     link: "https://github.com/henryarin/rsalite",
     imageAlt: "RSAlite terminal output mockup",
   },
+
   {
     title: "CPU Usage Visualizer",
     description:
@@ -53,6 +61,16 @@ const ProjectsSection = () => {
                 <h3 className="project-name">{project.title}</h3>
                 <p className="project-description">{project.description}</p>
 
+                {/* technical highlights */}
+                {project.highlights && (
+                  <ul className="project-highlights">
+                    {project.highlights.map((h) => (
+                      <li key={h}>{h}</li>
+                    ))}
+                  </ul>
+                )}
+
+                {/* tech list */}
                 <ul className="project-tech">
                   {project.tech.map((t) => (
                     <li key={t}>{t}</li>
