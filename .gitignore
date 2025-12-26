@@ -144,6 +144,4 @@ vite.config.ts.timestamp-*
 src/.DS_Store
 **/.DS_Store
 
-# Large background art (keep local)
-public/images/footer-bg.png
-public/images/hero-bg.png
+
